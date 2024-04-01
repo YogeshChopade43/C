@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+    int roll_number[80]; // Declaration of integer array variable
+
+    // Initialization of integer array variable
+    for (i = 0; i < 80; i++) {
+        roll_number[i] = 101 + i; // Assigning values from 101 to 180
+    }
+
+    // Displaying the array elements
+    printf("Array elements:\n");
+    for (i = 0; i < 80; i++) {
+        printf("%d ", roll_number[i]); // Include space after each element
+    }
+    printf("\n"); // Add newline after printing all elements
+
+    // End user input
+    printf("\nEnter 80 array elements:\n");
+    for (i = 0; i < 80; i++) {
+        scanf("%d", &roll_number[i]);
+    }
+
+    // Displaying the array elements after user input
+    printf("Array elements after user input:\n");
+    for (i = 0; i < 80; i++) {
+        printf("%d ", roll_number[i]); // Include space after each element
+    }
+    printf("\n"); // Add newline after printing all elements
+
+    return 0;
+}
